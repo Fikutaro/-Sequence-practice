@@ -7,7 +7,7 @@ def fibonacci(n)
   a
 end
 
-
+puts fibonacci(19)
 
 
 puts "数を出したい番目を入力してください"
