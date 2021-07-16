@@ -1,11 +1,11 @@
 def divisor(num)
   result = []
   i = 1
-  while i <= num do
+  while i <= 5000000 do
     remainder = num % i
     if remainder == 0
       result << i
-    end 
+    end
     i += 1
   end
   return result

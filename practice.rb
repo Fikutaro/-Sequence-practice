@@ -1,10 +1,26 @@
-def tribonacci2(n)
-  return   if n < 0
-  return 0 if n < 3
-  return 1 if n < 5
-  tribonacci2(n - 1) + tribonacci2(n - 2) + tribonacci2(n - 3) 
-end
+  result = []
+  n = 1
+  c = 0
+  while n <= 1000000 
+  c = 0
+  answer = n
+    while answer >= 10 
+      ccc = (answer / 1000000) % 10
+      bbb = (answer / 100000) % 10
+      aaa = (answer / 10000) % 10
+      thousand = (answer / 1000) % 10   # => 1
+      hundred = (answer / 100) % 10     # => 2
+      ten = (answer / 10) % 10          # => 3
+      one = answer % 10 
+      answer = thousand * hundred * ten * one * aaa * bbb * ccc 
+      
+      c += 1
+    
+    end
+  if c == 
+   result << answer
+  end
+  n += 1
+  end
 
-puts "数を出したいのは何項目ですか？"
-n = gets.to_i
-puts "#{n}項目の数字は#{tribonacci2(n)}"
+puts result.length
